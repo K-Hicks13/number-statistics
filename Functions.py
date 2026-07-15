@@ -13,3 +13,6 @@ def average(numbers):
 
 def total(numbers):
     return sum(numbers)
+
+def sort_numbers(numbers):
+    return sorted(numbers)

@@ -13,3 +13,5 @@ print("Highest: ", maximum(numbers))
 print("Lowest: ",minimum(numbers))
 print("Average: ", average(numbers))
 print("Total: ",total(numbers))
+
+print("\nNumbers sorted: ", sort_numbers(numbers))

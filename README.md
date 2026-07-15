@@ -11,7 +11,7 @@ A Python console application that analyses a set of numbers entered by the user.
 - Display the lowest value
 - Display the total
 - Display the average
-- Display the numbers in chronological order
+- Display the numbers in ascending numerical order
 
 ## Technologies
 

@@ -1,14 +1,15 @@
 # Number Statistics
-print("Number Statistics")
-numbers = list(map(int, input("Please enter the 10 numbers (separated by space): ").split(" ")))
+from Functions import average, maximum, minimum, total, enumerate_numbers, sort_numbers
 
-for index, number in enumerate (numbers, start=1):
-    print(f"Number {index}: {number}")
+print("Number Statistics")
+numbers = list(map(int, input("\nPlease enter the 10 numbers (separated by space): ").split(" ")))
+
+enumerate_numbers(numbers)
 
 avg = sum(numbers)/len(numbers)
 
-print("Results: ")
-print("Highest: ",max(numbers))
-print("Lowest: ",min(numbers))
-print("Average: ", avg)
-print("Total: ",sum(numbers))
+print("\nResults: ")
+print("Highest: ", maximum(numbers))
+print("Lowest: ",minimum(numbers))
+print("Average: ", average(numbers))
+print("Total: ",total(numbers))

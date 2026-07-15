@@ -3,19 +3,19 @@ from Functions import average, maximum, minimum, total, enumerate_numbers, sort_
 
 print("Number Statistics")
 
-    while True:
-        user_input = input("\nPlease enter 10 numbers separated by spaces: ")
+while True:
+    user_input = input("\nPlease enter 10 numbers separated by spaces: ")
 
-        try:
-            numbers = list(map(int, user_input.split()))
+    try:
+        numbers = list(map(int, user_input.split()))
 
-            if len(numbers) == 10:
-                break
+        if len(numbers) == 10:
+            break
 
-            print("Please enter exactly 10 numbers.")
+        print("Please enter exactly 10 numbers.")
 
-        except ValueError:
-            print("Please enter numbers only.")
+    except ValueError:
+        print("Please enter numbers only.")
 
 enumerate_numbers(numbers)
 
